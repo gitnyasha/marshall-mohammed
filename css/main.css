@@ -18,7 +18,7 @@ nav .search {
   margin-top: 10px;
 }
 .search button {
-
+/*margin-top: 10px;*/
 }
 nav .topright {
   float: right;
@@ -39,7 +39,7 @@ nav .topright {
 .svgNav {
   width: 40px;
   height: 25px;
-  padding: 10px 20px;
+  padding: 10px 5px;
   float: left;
 }
 svg{
@@ -52,4 +52,32 @@ svg:hover{
   height: 50px;
   width: 50px;
   border-radius: 50%;
+}
+.thumbnail{
+  display: inline-flex;
+}
+aside{
+  float: right;
+  width: 20vw;
+}
+.thumbnailImg{
+  position: relative;
+}
+#timeStamp,h2,h1{
+  font-family: arial;
+}
+#timeStamp{
+  position: absolute;
+  background-color: black;
+  color: white;
+  bottom: -8px;
+  right: 16px;
+}
+iframe{
+  width: 70vw;
+  height: 65vh;
+}
+button img {
+  width: 30px;
+  height: 21px;
 }

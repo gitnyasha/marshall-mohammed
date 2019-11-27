@@ -1,0 +1,30 @@
+nav {
+  width: 100%;
+  float: left;
+}
+nav img {
+  width: 150px;
+  height: 80px;
+  float: left;
+}
+nav .search {
+  width: 40%;
+  margin: 10px 0 0 20%;
+  float: left;
+}
+nav .topright {
+  width: 15%;
+  float: right;
+}
+nav .topright .fa {
+  padding: 5px 10px;
+}
+.content {
+  width: 60%;
+  float: left;
+}
+.sidenav {
+  width: 35%;
+  float: left;
+  background-color: grey;
+}

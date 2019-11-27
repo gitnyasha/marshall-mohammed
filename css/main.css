@@ -1,6 +1,7 @@
 nav {
   width: 100%;
   float: left;
+  margin-bottom: 20px;
 }
 nav img {
   width: 150px;
@@ -12,25 +13,33 @@ nav .search {
   margin: 10px 0 0 20%;
   float: left;
 }
+.search input[type=text] {
+  width: 300px;
+  margin-top: 10px;
+}
+.search button {
+
+}
 nav .topright {
-  /*width: 15%;*/
   float: right;
+  margin-right: 10px;
 }
-nav .topright .fa {
-  padding: 5px 10px;
-}
+
 .content {
   width: 60%;
   float: left;
 }
 .sidenav {
-  width: 35%;
-  float: left;
-  background-color: grey;
+  width: 25%;
+  float: right;
 }
-.svgNav, {
-  width: 25px;
+.sidenav ul li {
+  list-style: none;
+}
+.svgNav {
+  width: 40px;
   height: 25px;
+  padding: 10px 20px;
   float: left;
 }
 svg{

@@ -13,7 +13,7 @@ nav .search {
   float: left;
 }
 nav .topright {
-  width: 15%;
+  /*width: 15%;*/
   float: right;
 }
 nav .topright .fa {
@@ -27,4 +27,20 @@ nav .topright .fa {
   width: 35%;
   float: left;
   background-color: grey;
+}
+.svgNav, {
+  width: 25px;
+  height: 25px;
+  float: left;
+}
+svg{
+  fill: #606060;
+}
+svg:hover{
+  fill: #9C9A9A;
+}
+#avatar{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
 }

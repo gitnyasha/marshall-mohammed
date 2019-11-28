@@ -1,0 +1,156 @@
+
+nav {
+  width: 100%;
+  float: left;
+  margin-bottom: 20px;
+}
+nav img {
+  width: 70px;
+  height: 55px;
+  float: left;
+}
+nav .search {
+  margin: 10px 0 0 20%;
+  float: left;
+}
+.search input[type=text] {
+  width: 500px;
+  margin-top: 5px;
+  float: left;
+  padding : 4px 0px; 
+}
+.search button {
+margin-top: 5px;
+padding: 1.5px;
+}
+button img {
+  width: 20px;
+  height: 21px;
+}
+nav .topright {
+  float: right;
+  margin-right: 10px;
+}
+
+.content {
+  width: 70%;
+  float: left;
+  margin-left: 20px;
+}
+.sidenav {
+  width: 25%;
+  float: right;
+}
+.sidenav ul li {
+  list-style: none;
+}
+.svgNav {
+  width: 40px;
+  height: 25px;
+  padding: 10px 5px;
+  float: left;
+}
+svg{
+  fill: #606060;
+}
+svg:hover{
+  fill: #9C9A9A;
+}
+#avatar{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+.thumbnail{
+  display: inline-flex;
+}
+aside{
+  float: right;
+  width: 20vw;
+}
+.thumbnailImg{
+  position: relative;
+}
+.timeStamp,h2,h1,h3,span{
+  font-family: arial;
+}
+.timeStamp{
+  position: absolute;
+  background-color: black;
+  color: white;
+  bottom: -8px;
+  right: 16px;
+}
+iframe{
+  width: 70vw;
+  height: 65vh;
+}
+
+#videoDetails div{
+  display: inline-flex;
+  align-items: center;
+}
+#videoDetails{
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70vw;
+} 
+.content-icons{
+  width: 25px;
+  height: 25px;
+}
+span{
+  text-align: center;
+  color: #606060;
+  padding: 0px 12px;
+}
+
+.channel {
+  width: 100%;
+  height: 50px;
+  float: left;
+  border-top: solid thin grey;
+padding-top: 20px;
+}
+.channel-profile {
+  width: 80%;
+  float: left;
+}
+.channel-profile img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  float: left;
+}
+.channel-profile a {
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+  padding: 15px;
+}
+.subcribe-button {
+width: 20%;
+float: left;
+}
+.notifications {
+  width: 35px;
+  height: 35px;
+  float: right;
+}
+.recommendedVids div{
+  margin: 5px 0px;
+}
+.shareButton{
+  border : none;
+  background-color: white;
+}
+.sidebarVdt{
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.sidebarVdt h2{
+  margin: 0px 0px;
+  font-size: 22px;
+}

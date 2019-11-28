@@ -2,19 +2,191 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Youtube page</title>
+    <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
     <nav>
-
+      <svg class="svgNav">
+        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
+      </svg>
+      <img src="images/youtube.png" alt="youtube logo">
+      <form class="search" action="index.html" method="post">
+        <input type="text" name="search-bar" value="">
+        <button type="submit"><img alt="search" src="images/search.png"></button>
+      </form>
+      <div class="icons topright">
+        <svg class="svgNav">
+          <path d="M17 10.5V7c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4zM14 13h-3v3H9v-3H6v-2h3V8h2v3h3v2z"></path>
+        </svg>
+        <svg class="svgNav">
+          <path d="M4 8h4V4H4v4zm6 12h4v-4h-4v4zm-6 0h4v-4H4v4zm0-6h4v-4H4v4zm6 0h4v-4h-4v4zm6-10v4h4V4h-4zm-6 4h4V4h-4v4zm6 6h4v-4h-4v4zm0 6h4v-4h-4v4z" ></path>
+        </svg>
+        <svg id="bell" class="svgNav">
+          <path d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.9 2 2 2zm6-6v-5c0-3.07-1.64-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.63 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2z" ></path>
+        </svg>
+        <img id="avatar" alt="avatar" src="images/avatar.jpg">
+      </div>
     </nav>
-    <div class="content">
-      <!-- video and comments -->
-        <iframe width="768" height="480" src="https://www.youtube.com/embed/V74l_zS1x8E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <section class="content">
+        <div>
+          <iframe src="https://www.youtube.com/embed/V74l_zS1x8E" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="video-title">
+          <h3>Making a youtube page</h3>
+        </div>
+        <div id="videoDetails">
+          <p>1,768 views Oct 30, 2019</p>
+          <div>
+            <svg class="content-icons">
+              <path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z"></path>
+            </svg>
+            <span>691</span>
+            <svg class="content-icons">
+              <path d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v1.91l.01.01L1 14c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z"></path>
+            </svg>
+            <span>81</span>
+            <button class="shareButton"><svg class="content-icons">
+              <path d="M11.7333 8.26667V4L19.2 11.4667L11.7333 18.9333V14.56C6.4 14.56 2.66667 16.2667 0 20C1.06667 14.6667 4.26667 9.33333 11.7333 8.26667Z" ></path>
+            </svg></button>
+            <button class="shareButton"><span>SHARE</span></button>
+            <svg class="content-icons">
+              <path d="M14 10H2v2h12v-2zm0-4H2v2h12V6zm4 8v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zM2 16h8v-2H2v2z"></path>
+            </svg>
+            <span>SAVE</span>
+            <svg class="content-icons">
+              <circle cx="5" cy="12" r="2" class="style-scope yt-icon"></circle>
+              <circle cx="12" cy="12" r="2" class="style-scope yt-icon"></circle>
+              <circle cx="19" cy="12" r="2" class="style-scope yt-icon"></circle>
+            </svg>
+          </div>
     </div>
-    <div class="sidenav">
-      <!-- list of next videos -->
-
+    <div class="channel">
+      <div class="channel-profile">
+        <img src="images/me.png" alt="channel profile picture">
+        <a href="#"> <strong>Channel Name</strong> </a>
+      </div>
+      <div class="subcribe-button">
+        <button type="button" name="button">SUBSCRIBED</button>
+        <svg class="notifications">
+        <path d="M0 0h24v24H0z" fill="none"></path>
+        <path d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.9 2 2 2zm6-6v-5c0-3.07-1.63-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.64 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2zm-2 1H8v-6c0-2.48 1.51-4.5 4-4.5s4 2.02 4 4.5v6z"></path>
+      </svg>
+      </div>
     </div>
+    </section>
+    <aside>
+      <div class="recommendedVids">
+        <div>
+          <a class = "thumbnail" href="https://www.youtube.com/watch?v=F8T94sdiNjc">
+            <div class="thumbnailImg">
+              <img alt="thumbnail-1" src="https://i.ytimg.com/vi/F8T94sdiNjc/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLBGzbz0E2PA9PFwoyQnsIXVhrktUQ">
+              <p class="timeStamp">14:34</p>
+            </div>
+            <div class="sidebarVdt">
+              <h2>Aperture, Shutter Speed, ISO...</h2>
+              <span>4,1mil views</span>
+            </div>
+          </a>
+        </div>
+        <div>
+          <a class = "thumbnail" href="https://www.youtube.com/watch?v=yoW2jHoVdug">
+            <div class="thumbnailImg">
+              <img alt="thumbnail-2" src="https://i.ytimg.com/vi/yoW2jHoVdug/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&amp;rs=AOn4CLDc74dU_BQD5f27CkFi1Ca-_ii7wg">
+              <p class="timeStamp">9:04</p>
+            </div>
+            <div class="sidebarVdt">
+              <h2>How To Convert pdf to word...</h2>
+              <span>1,1mil views</span>
+            </div>
+          </a>
+        </div>
+        <div>
+          <a class = "thumbnail" href="https://www.youtube.com/watch?v=_vqrXIsAPXk">
+            <div class="thumbnailImg">
+              <img alt="thumbnail-3" src="https://i.ytimg.com/vi/_vqrXIsAPXk/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&amp;rs=AOn4CLAPaZXOgLwlYAoQuDr_kktVSlu58w">
+              <p class="timeStamp">8:15</p>
+            </div>
+            <div class="sidebarVdt">
+              <h2>How To Make Your Facebook...</h2>
+              <span>675k views</span>
+            </div>
+          </a>
+        </div>
+        <div>
+          <a class = "thumbnail" href="https://www.youtube.com/watch?v=F8T94sdiNjc">
+            <div class="thumbnailImg">
+              <img alt="thumbnail-4" src="https://i.ytimg.com/vi/F8T94sdiNjc/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLBGzbz0E2PA9PFwoyQnsIXVhrktUQ">
+              <p class="timeStamp">14:34</p>
+            </div>
+            <div class="sidebarVdt">
+              <h2>Aperture, Shutter Speed, ISO...</h2>
+              <span>4,1mil views</span>
+            </div>
+          </a>
+        </div>
+        <div>
+          <a class = "thumbnail" href="https://www.youtube.com/watch?v=yoW2jHoVdug">
+            <div class="thumbnailImg">
+              <img alt="thumbnail-5" src="https://i.ytimg.com/vi/yoW2jHoVdug/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&amp;rs=AOn4CLDc74dU_BQD5f27CkFi1Ca-_ii7wg">
+              <p class="timeStamp">9:04</p>
+            </div>
+            <div class="sidebarVdt">
+              <h2>How To Convert pdf to word...</h2>
+              <span>1,1mil views</span>
+            </div>
+          </a>
+        </div>
+        <div>
+          <a class = "thumbnail" href="https://www.youtube.com/watch?v=_vqrXIsAPXk">
+            <div class="thumbnailImg">
+              <img alt="thumbnail-6" src="https://i.ytimg.com/vi/_vqrXIsAPXk/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&amp;rs=AOn4CLAPaZXOgLwlYAoQuDr_kktVSlu58w">
+              <p class="timeStamp">8:15</p>
+            </div>
+            <div class="sidebarVdt">
+              <h2>How To Make Your Facebook...</h2>
+              <span>675k views</span>
+            </div>
+          </a>
+        </div>
+        <div>
+          <a class = "thumbnail" href="https://www.youtube.com/watch?v=F8T94sdiNjc">
+            <div class="thumbnailImg">
+              <img alt="thumbnail-7" src="https://i.ytimg.com/vi/F8T94sdiNjc/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLBGzbz0E2PA9PFwoyQnsIXVhrktUQ">
+              <p class="timeStamp">14:34</p>
+            </div>
+            <div class="sidebarVdt">
+              <h2>Aperture, Shutter Speed, ISO...</h2>
+              <span>4,1mil views</span>
+            </div>
+          </a>
+        </div>
+        <div>
+          <a class = "thumbnail" href="https://www.youtube.com/watch?v=yoW2jHoVdug">
+            <div class="thumbnailImg">
+              <img alt="thumbnail-8" src="https://i.ytimg.com/vi/yoW2jHoVdug/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&amp;rs=AOn4CLDc74dU_BQD5f27CkFi1Ca-_ii7wg">
+              <p class="timeStamp">9:04</p>
+            </div>
+            <div class="sidebarVdt">
+              <h2>How To Convert pdf to word...</h2>
+              <span>1,1mil views</span>
+            </div>
+          </a>
+        </div>
+        <div>
+          <a class = "thumbnail" href="https://www.youtube.com/watch?v=_vqrXIsAPXk">
+            <div class="thumbnailImg">
+              <img alt="thumbnail-9" src="https://i.ytimg.com/vi/_vqrXIsAPXk/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&amp;rs=AOn4CLAPaZXOgLwlYAoQuDr_kktVSlu58w">
+              <p class="timeStamp">8:15</p>
+            </div>
+            <div class="sidebarVdt">
+              <h2>How To Make Your Facebook...</h2>
+              <span>675k views</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </aside>
   </body>
 </html>

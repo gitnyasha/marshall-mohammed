@@ -71,10 +71,10 @@ aside{
 .thumbnailImg{
   position: relative;
 }
-#timeStamp,h2,h1,h3,span{
+.timeStamp,h2,h1,h3,span{
   font-family: arial;
 }
-#timeStamp{
+.timeStamp{
   position: absolute;
   background-color: black;
   color: white;
@@ -86,10 +86,6 @@ iframe{
   height: 65vh;
 }
 
-.video-title {
-  clear : both;
-  width: : 75vw;
-}
 #videoDetails div{
   display: inline-flex;
   align-items: center;
@@ -144,4 +140,17 @@ float: left;
 }
 .recommendedVids div{
   margin: 5px 0px;
+}
+.shareButton{
+  border : none;
+  background-color: white;
+}
+.sidebarVdt{
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.sidebarVdt h2{
+  margin: 0px 0px;
+  font-size: 22px;
 }
